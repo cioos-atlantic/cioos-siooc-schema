@@ -34,6 +34,13 @@
       }
     },
     {
+      "field_name": "not_used",
+      "label": "Parent organization",
+      "display_snippet": null,
+      "form_snippet": "org_hierarchy.html",
+      "validators": "ignore_missing"
+    },
+    {
       "field_name": "image_url_translated",
       "preset": "fluent_link",
       "label": {
