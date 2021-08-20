@@ -1125,52 +1125,8 @@
           "label":"metadata language"
         },
         {
-          "value":"metadata-point-of-contact/contact-info_email",
-          "label":"metadata-point-of-contact/contact-info_email"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_application-profile",
-          "label":"metadata-point-of-contact/contact-info_online-resource_application-profile"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_description",
-          "label":"metadata point of contact/contact info online resource description"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_function",
-          "label":"metadata-point-of-contact/contact-info_online-resource_function"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_name",
-          "label":"metadata-point-of-contact/contact-info_online-resource_name"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_protocol",
-          "label":"metadata-point-of-contact/contact-info_online-resource_protocol"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_protocol-request",
-          "label":"metadata-point-of-contact/contact-info_online-resource_protocol-request"
-        },
-        {
-          "value":"metadata-point-of-contact/contact-info_online-resource_url",
-          "label":"metadata-point-of-contact/contact-info_online-resource_url"
-        },
-        {
-          "value":"metadata-point-of-contact/individual-name",
-          "label":"metadata-point-of-contact/individual-name"
-        },
-        {
-          "value":"metadata-point-of-contact/organisation-name",
-          "label":"metadata-point-of-contact/organisation-name"
-        },
-        {
-          "value":"metadata-point-of-contact/position-name",
-          "label":"metadata-point-of-contact/position-name"
-        },
-        {
-          "value":"metadata-point-of-contact/role",
-          "label":"metadata-point-of-contact/role"
+          "value":"metadata-point-of-contact",
+          "label":"metadata-point-of-contact"
         },
         {
           "value":"metadata-reference-date",
