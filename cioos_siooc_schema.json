@@ -190,6 +190,155 @@
       ]
     },
     {
+      "field_name": "keywords_private",
+      "preset": "fluent_tags",
+      "display_snippet": null,
+      "required": false,
+      "tag_validators": "tag_length_validator cioos_tag_name_validator",
+      "label": {
+        "fr": "Mots-clés",
+        "en": "Keywords (Private)"
+      },
+      "form_placeholder": {
+        "fr": "p. ex. économie, santé mentale, gouvernement",
+        "en": "eg. economy, mental health, government"
+      }
+    },
+    {
+      "field_name": "eov_private",
+      "label": "Ocean Variables (Private)",
+      "preset": "multiple_select",
+      "required": false,
+      "validators": "scheming_multiple_choice cioos_clean_and_populate_eovs",
+      "choices":[{
+          "category": "Biogeochemical",
+          "value": "oxygen",
+          "label": "Oxygen",
+          "icon": "dissolved-oxygen.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceHeight",
+          "label": "Sea Surface Height",
+          "icon": "sea-level.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nutrients",
+          "label": "Nutrients",
+          "icon": "nutrients.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seawaterDensity",
+          "label": "Seawater Density",
+          "icon": "density.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "potentialTemperature",
+          "label": "Potential Temperature",
+          "icon": "temperature.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "potentialDensity",
+          "label": "Potential Density",
+          "icon": "density.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "speedOfSound",
+          "label": "Speed of Sound",
+          "icon": "speed-of-sound.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nitrate",
+          "label": "Nitrate",
+          "icon": "nitrate.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "phosphate",
+          "label": "Phosphate",
+          "icon": "phosphate.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "silicate",
+          "label": "Silicate",
+          "icon": "silicate.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "inorganicCarbon",
+          "label": "Inorganic Carbon",
+          "icon": "inorganic-carbon.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "dissolvedOrganicCarbon",
+          "label": "Dissolved Organic Carbon",
+          "icon": "dissolved-organic-carbon.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaIce",
+          "label": "Sea Ice",
+          "icon": "sea-ice.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaState",
+          "label": "Sea State",
+          "icon": "sea-state.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceSalinity",
+          "label": "Sea Surface Salinity",
+          "icon": "salinity.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceTemperature",
+          "label": "Sea Surface Temperature",
+          "icon": "temperature.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceCurrents",
+          "label": "Sub Surface Currents",
+          "icon": "currents.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceSalinity",
+          "label": "Sub Surface Salinity",
+          "icon": "salinity.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceTemperature",
+          "label": "Sub Surface Temperature",
+          "icon": "temperature.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "surfaceCurrents",
+          "label": "Surface Currents",
+          "icon": "currents.svg"
+        },
+        {
+          "category": "Other",
+          "value": "other",
+          "label": "Other",
+          "icon": "eov_other.svg"
+        }
+      ]
+    },
+    {
       "field_name": "citation",
       "preset": "fluent_markdown",
       "display_snippet": null,
