@@ -190,6 +190,155 @@
       ]
     },
     {
+      "field_name": "res_extras_keywords_private",
+      "preset": "fluent_tags",
+      "display_snippet": null,
+      "required": false,
+      "tag_validators": "tag_length_validator cioos_tag_name_validator",
+      "label": {
+        "fr": "Mots-clés",
+        "en": "Keywords (Private)"
+      },
+      "form_placeholder": {
+        "fr": "p. ex. économie, santé mentale, gouvernement",
+        "en": "eg. economy, mental health, government"
+      }
+    },
+    {
+      "field_name": "res_extras_eov_private",
+      "label": "Ocean Variables (Private)",
+      "preset": "multiple_select",
+      "required": false,
+      "validators": "scheming_multiple_choice",
+      "choices":[{
+          "category": "Biogeochemical",
+          "value": "oxygen",
+          "label": "Oxygen",
+          "icon": "dissolved-oxygen.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceHeight",
+          "label": "Sea Surface Height",
+          "icon": "sea-level.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nutrients",
+          "label": "Nutrients",
+          "icon": "nutrients.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seawaterDensity",
+          "label": "Seawater Density",
+          "icon": "density.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "potentialTemperature",
+          "label": "Potential Temperature",
+          "icon": "temperature.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "potentialDensity",
+          "label": "Potential Density",
+          "icon": "density.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "speedOfSound",
+          "label": "Speed of Sound",
+          "icon": "speed-of-sound.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "nitrate",
+          "label": "Nitrate",
+          "icon": "nitrate.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "phosphate",
+          "label": "Phosphate",
+          "icon": "phosphate.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "silicate",
+          "label": "Silicate",
+          "icon": "silicate.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "inorganicCarbon",
+          "label": "Inorganic Carbon",
+          "icon": "inorganic-carbon.svg"
+        },
+        {
+          "category": "Biogeochemical",
+          "value": "dissolvedOrganicCarbon",
+          "label": "Dissolved Organic Carbon",
+          "icon": "dissolved-organic-carbon.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaIce",
+          "label": "Sea Ice",
+          "icon": "sea-ice.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaState",
+          "label": "Sea State",
+          "icon": "sea-state.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceSalinity",
+          "label": "Sea Surface Salinity",
+          "icon": "salinity.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "seaSurfaceTemperature",
+          "label": "Sea Surface Temperature",
+          "icon": "temperature.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceCurrents",
+          "label": "Sub Surface Currents",
+          "icon": "currents.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceSalinity",
+          "label": "Sub Surface Salinity",
+          "icon": "salinity.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "subSurfaceTemperature",
+          "label": "Sub Surface Temperature",
+          "icon": "temperature.svg"
+        },
+        {
+          "category": "Physical",
+          "value": "surfaceCurrents",
+          "label": "Surface Currents",
+          "icon": "currents.svg"
+        },
+        {
+          "category": "Other",
+          "value": "other",
+          "label": "Other",
+          "icon": "eov_other.svg"
+        }
+      ]
+    },
+    {
       "field_name": "citation",
       "preset": "fluent_markdown",
       "display_snippet": null,
@@ -1016,326 +1165,7 @@
        "validators": "ignore_missing int_validator",
        "form_placeholder": "9",
        "help_text": "(Optional) Sets the initial maxamum zoom level in the spatial map when viewing this dataset"
-     },
-     {
-      "field_name":"public-visibility",
-      "label": "Public Visibility Settings",
-      "preset": "multiple_checkbox",
-      "form_snippet":"vitality_prototype_multiple_checkbox.html",
-      "display_snippet": null,
-      "choices": [
-        {
-          "value":"author",
-          "label":"author"
-        },
-        {
-          "value":"author_email",
-          "label":"author email"
-        },
-        {
-          "value":"bbox-east-long",
-          "label": "bbox east long"
-        },
-        {
-          "value":"bbox-north-lat",
-          "label":"bbox north lat"
-        },
-        {
-          "value":"bbox-south-lat",
-          "label":"bbox south lat"
-        },
-        {
-          "value":"bbox-west-long",
-          "label":"bbox west long"
-        },
-        {
-          "value":"cited-responsible-party",
-          "label":"cited responsible party"
-        },
-        {
-          "value":"creator_user_id",
-          "label":"creator user id"
-        },
-        {
-          "value":"dataset-reference-date",
-          "label":"dataset reference date"
-        },
-        {
-          "value":"eov",
-          "label":"eov"
-        },
-        {
-          "value":"extras",
-          "label":"extras"
-        },
-        {
-          "value":"frequency-of-update",
-          "label":"frequency of update"
-        },
-        {
-          "value":"groups",
-          "label":"groups"
-        },
-        {
-          "value":"id",
-          "label":"id"
-        },
-        {
-          "value":"isopen",
-          "label":"isopen"
-        },
-        {
-          "value":"keywords/en",
-          "label":"keywords/en"
-        },
-        {
-          "value":"keywords/fr",
-          "label":"keywords/fr"
-        },
-        {
-          "value":"license_id",
-          "label":"license id"
-        },
-        {
-          "value":"license_title",
-          "label":"license title"
-        },
-        {
-          "value":"license_url",
-          "label":"license url"
-        },
-        {
-          "value":"maintainer",
-          "label":"maintainer"
-        },
-        {
-          "value":"maintainer_email",
-          "label":"maintainer email"
-        },
-        {
-          "value":"metadata_created",
-          "label":"metadata created"
-        },
-        {
-          "value":"metadata_modified",
-          "label":"metadata modified"
-        },
-        {
-          "value":"metadata-language",
-          "label":"metadata language"
-        },
-        {
-          "value":"metadata-point-of-contact",
-          "label":"metadata-point-of-contact"
-        },
-        {
-          "value":"metadata-reference-date",
-          "label":"metadata-reference-date"
-        },
-        {
-          "value":"name",
-          "label":"name"
-        },
-        {
-          "value":"notes/en",
-          "label":"notes/en"
-        },
-        {
-          "value":"notes/fr",
-          "label":"notes/fr"
-        },
-        {
-          "value":"notes_translated/en",
-          "label":"notes_translated/en"
-        },
-        {
-          "value":"notes_translated/fr",
-          "label":"notes_translated/fr"
-        },
-        {
-          "value":"num_resources",
-          "label":"num_resources"
-        },
-        {
-          "value":"num_tags",
-          "label":"num_tags"
-        },
-        {
-          "value":"organization/approval_status",
-          "label":"organization/approval_status"
-        },
-        {
-          "value":"organization/created",
-          "label":"organization/created"
-        },
-        {
-          "value":"organization/description",
-          "label":"organization/description"
-        },
-        {
-          "value":"organization/description_translated/en",
-          "label":"organization/description_translated/en"
-        },
-        {
-          "value":"organization/description_translated/fr",
-          "label":"organization/description_translated/fr"
-        },
-        {
-          "value":"organization/id",
-          "label":"organization/id"
-        },
-        {
-          "value":"organization/image_url",
-          "label":"organization/image_url"
-        },
-        {
-          "value":"organization/image_url_translated/en",
-          "label":"organization/image_url_translated/en"
-        },
-        {
-          "value":"organization/image_url_translated/fr",
-          "label":"organization/image_url_translated/fr"
-        },
-        {
-          "value":"organization/is_organization",
-          "label":"organization/is_organization"
-        },
-        {
-          "value":"organization/name",
-          "label":"organization/name"
-        },
-        {
-          "value":"organization/revision_id",
-          "label":"organization/revision_id"
-        },
-        {
-          "value":"organization/state",
-          "label":"organization/state"
-        },
-        {
-          "value":"organization/title",
-          "label":"organization/title"
-        },
-        {
-          "value":"organization/title_translated/en",
-          "label":"organization/title_translated/en"
-        },
-        {
-          "value":"organization/title_translated/fr",
-          "label":"organization/title_translated/fr"
-        },
-        {
-          "value":"organization/type",
-          "label":"organization/type"
-        },
-        {
-          "value":"owner_org",
-          "label":"owner_org"
-        },
-        {
-          "value":"private",
-          "label":"private"
-        },
-        {
-          "value":"progress",
-          "label":"progress"
-        },
-        {
-          "value":"relationships_as_object",
-          "label":"relationships_as_object"
-        },
-        {
-          "value":"relationships_as_subject",
-          "label":"relationships_as_subject"
-        },
-        {
-          "value":"resources",
-          "label":"resources"
-        },
-        {
-          "value":"resource-type",
-          "label":"resource-type"
-        },
-        {
-          "value":"revision_id",
-          "label":"revision_id"
-        },
-        {
-          "value":"spatial/coordinates",
-          "label":"spatial/coordinates"
-        },
-        {
-          "value":"spatial/type",
-          "label":"spatial/type"
-        },
-        {
-          "value":"state",
-          "label":"tags"
-        },
-        {
-          "value":"temporal-extent/begin",
-          "label":"temporal-extent/begin"
-        },
-        {
-          "value":"temporal-extent/end",
-          "label":"temporal-extent/end"
-        },
-        {
-          "value":"title",
-          "label":"title"
-        },
-        {
-          "value":"title_translated/en",
-          "label":"title_translated/en"
-        },
-        {
-          "value":"title_translated/fr",
-          "label":"title_translated/fr"
-        },
-        {
-          "value":"tracking_summary/recent",
-          "label":"tracking_summary/recent"
-        },
-        {
-          "value":"tracking_summary/total",
-          "label":"tracking_summary/total"
-        },
-        {
-          "value":"type",
-          "label":"type"
-        },
-        {
-          "value":"unique-resource-identifier-full/authority",
-          "label":"unique-resource-identifier-full/authority"
-        },
-        {
-          "value":"unique-resource-identifier-full/code",
-          "label":"unique-resource-identifier-full/code"
-        },
-        {
-          "value":"unique-resource-identifier-full/code-space",
-          "label":"unique-resource-identifier-full/code-space"
-        },
-        {
-          "value":"unique-resource-identifier-full/version",
-          "label":"unique-resource-identifier-full/version"
-        },
-        {
-          "value":"url",
-          "label":"url"
-        },
-        {
-          "value":"vertical-extent",
-          "label":"vertical-extent"
-        },
-        {
-          "value":"xml_location_url",
-          "label":"xml_location_url"
-        }
-      ]
-      }
-
-
+     }
   ],
   "resource_fields": [
     {
