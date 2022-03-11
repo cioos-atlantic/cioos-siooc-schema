@@ -190,14 +190,14 @@
       ]
     },
     {
-      "field_name": "res_extras_keywords_private",
+      "field_name": "res_extras_keywords_restricted",
       "preset": "fluent_tags",
       "display_snippet": null,
       "required": false,
       "tag_validators": "tag_length_validator cioos_tag_name_validator",
       "label": {
-        "fr": "Mots-clés",
-        "en": "Keywords (Private)"
+        "fr": "Mots-clés (Limité)",
+        "en": "Keywords (Restricted)"
       },
       "form_placeholder": {
         "fr": "p. ex. économie, santé mentale, gouvernement",
@@ -205,8 +205,8 @@
       }
     },
     {
-      "field_name": "res_extras_eov_private",
-      "label": "Ocean Variables (Private)",
+      "field_name": "res_extras_eov_restricted",
+      "label": "Ocean Variables (Restricted)",
       "preset": "multiple_select",
       "required": false,
       "validators": "scheming_multiple_choice",
